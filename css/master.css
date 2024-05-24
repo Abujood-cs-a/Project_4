@@ -1,0 +1,236 @@
+/* Start Variable */
+/* End Variable */
+/* Start Global Rule */
+* {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+
+body {
+    background-image: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 991px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rule */
+/* start Header */
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    clip-path: circle(40% at right 70%);
+    z-index: -1;
+
+}
+
+@media (max-width:767px) {
+    body::before {
+        clip-path: circle(40% at bottom);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.header .container {
+    background-color: rgb(255 255 255 / 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.header .container .navegation {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width:767px) {
+    .header .container .navegation {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.header .container .logo {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .header .container .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.header .container .nav ul {
+    display: flex;
+}
+@media (max-width:767px) {
+    .header .container .navegation { 
+        text-align: center;
+        
+    }
+}
+.header .container .nav ul li a {
+    display: block;
+    color: white;
+    padding: 0 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+@media (max-width:500px) {
+    .header .container .nav ul li a { 
+        margin-right: -15px;
+    }
+}
+
+.header .container .nav ul li a:hover {
+    color: red;
+}
+
+.header .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width:767px) {
+    .header .container .content { 
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.header .container .content .text {
+    max-width: 400px;
+    color: white;
+}
+@media (max-width:991px) {
+    .header .container .content .text { 
+        width: 100%;
+    }
+
+}
+
+.header .container .content .text h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header .container .content .text p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+@media (max-width:991px) {
+    .header .container .content .text h2 { 
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    
+.header .container .content .text p { 
+    font-size: 16px;
+}
+}
+
+.header .container .content .image {
+    width: 40%;
+}
+
+.header .container .content .image img {
+width: 400px;    
+}
+
+@media (min-width:991px) and (max-width:1200px){
+    .header .container .content .image img { 
+        width: 330px;
+    }
+}
+@media (min-width:768px) and (max-width:990px){
+    .header .container .content .image img { 
+        width: 250px;
+    }
+}
+@media (max-width:767px) {
+    .header .container .content .image  { 
+        width: 200px;
+        position: relative;
+        top: -15px;
+        margin: 10px 0;
+    }
+    .header .container .content .image img { 
+        max-width: 100%;
+    }
+}
+/* End Header */
